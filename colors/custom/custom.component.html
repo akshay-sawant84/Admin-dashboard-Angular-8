@@ -1,0 +1,8 @@
+<div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Custom Text Color Utilities</h6>
+        </div>
+        <div class="card-body">
+            <p class="text-gray-100 p-3 m-0" *ngFor="let custom of customs" [ngStyle]="{'background-color':this.custom.bcolor,'color':this.custom.tcolor}">{{custom.name}}</p>
+        </div>
+    </div>

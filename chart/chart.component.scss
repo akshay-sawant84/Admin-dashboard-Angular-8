@@ -1,0 +1,36 @@
+.shadow {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    display: none;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+
+  .dropdown .dropdown-menu {
+    font-size: .85rem;
+}
+
+.text-gray-400 {
+    color: #d1d3e2!important;
+}
+
+.font-weight-bold {
+    font-weight: 600!important;
+}
+.text-gray-800 {
+    color: #5a5c69!important;
+    font-weight: 400 !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #9c9797;
+}

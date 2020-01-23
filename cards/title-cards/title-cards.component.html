@@ -1,0 +1,40 @@
+<!-- Dropdown Card Example -->
+<div class="card shadow mb-4">
+  <!-- Card Header - Dropdown -->
+
+  <div *ngIf="type==dropdown" class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+    <h6 class="m-0 text-primary">Dropdown Card Example</h6>
+    <div class="dropdown no-arrow">
+      <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+        <div class="dropdown-header">Dropdown Header:</div>
+        <a class="dropdown-item">Action</a>
+        <a class="dropdown-item">Another action</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item">Something else here</a>
+      </div>
+    </div>
+  </div>
+  <!-- Card Body -->
+  <div class="card-body">
+    Dropdown menus can be placed in the card header in order to extend the functionality of a basic card. In this
+    dropdown card example, the Font Awesome vertical ellipsis icon in the card header can be clicked on in order to
+    toggle a dropdown menu.
+  </div>
+</div>
+
+<div class="card shadow mb-4">
+  <a *ngIf="type==collapse" href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse"
+    role="button" aria-expanded="true" aria-controls="collapseCardExample">
+    <h6 class="m-0 text-primary">Collapsable Card Example<span></span></h6>
+  </a>
+  <!-- Card Content - Collapse -->
+  <div *ngIf="type==collapse" class="collapse show" id="collapseCardExample">
+    <div class="card-body">
+        This is a collapsable card example using Bootstrap's built in collapse functionality. Click on the card header to see the card body collapse and expand!
+    </div>
+  </div>
+</div>

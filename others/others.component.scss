@@ -1,0 +1,23 @@
+.rotate-15 {
+    transform: rotate(15deg);
+}
+.rotate-n-15 {
+    transform: rotate(-15deg);
+}
+.text-gray-800 {
+    color: #5a5c69!important;
+    font-weight: 400 !important;
+}
+p {
+    margin-top: 0;
+    color: #858282 !important;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    color: rgb(121, 119, 119);
+}

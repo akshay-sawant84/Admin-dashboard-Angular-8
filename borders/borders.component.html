@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-1 text-gray-800">Border Utilities</h1>
+    <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
+            href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities below were
+        created to extend this theme past the default utility classes built into Bootstrap's framework.</p>
+
+    <!-- Content Row -->
+    <div class="row">
+
+        <!-- Border Left Utilities -->
+        <div class="col-lg-6">
+
+            <div class="card mb-4 py-3" *ngFor="let blefts of bleft"
+                [ngStyle]="{'border-left-color':this.blefts.wcolor,'color':this.blefts.tcolor,'border-left-width':'5px'}">
+                <div class="card-body">
+                    {{blefts.name}}
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Border Bottom Utilities -->
+        <div class="col-lg-6">
+
+            <div class="card mb-4 py-3" *ngFor="let x of bbottom"
+                [ngStyle]="{'color':this.x.tcolor,'border-bottom-width':'5px','border-bottom-color':this.x.wcolor}">
+                <div class="card-body">
+                    {{x.name}}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,34 @@
+<div class="card-container">
+  <div class="cards4">
+    <p class="h2">Cards</p>
+    <div class="row">
+      <app-cards4 class="col-md-3 col-sm-12 mb-4" *ngFor="let card of cards" [card]=card></app-cards4>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-lg-6">
+
+      <!-- Default Card Example -->
+      <div class="card shadow mb-4" *ngFor="let default of defaults">
+        <div class="card-header" [ngStyle]="{'color':this.default.color,'font-weight':this.default.font}">
+          {{default.header}}
+        </div>
+        <div class="card-body">
+          {{default.p}}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-6">
+
+      <!-- Dropdown Card Example -->
+      <app-title-cards [type]="dropdown"></app-title-cards>
+
+      <!-- Collapsable Card Example -->
+
+    </div>
+
+  </div>
+</div>
